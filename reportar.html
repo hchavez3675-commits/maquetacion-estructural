@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Rescate - Sistema de Rescate Animal</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+        <p>Módulo de Ingreso de Casos</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio (Dashboard)</a></li>
+            <li><a href="reportar.html">Reportar un Rescate</a></li>
+            <li><a href="rescates.html">Listado de Rescates</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Registrar Nuevo Animal Rescatado</h2>
+            <p>Por favor, complete el siguiente formulario para registrar una emergencia o ingreso. El ingreso varía según la especie, requiriendo protocolos distintos para animales domésticos o fauna silvestre.</p>
+            
+            <article>
+                <!-- SOLUCIÓN: Se añade un encabezado h3 al artículo para cumplir con el estándar W3C -->
+                <h3>Formulario de Datos del Rescate</h3>
+                
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Datos Básicos del Rescate</legend>
+                        
+                        <label for="tituloCaso">Título del caso o nombre provisional:</label><br>
+                        <input type="text" id="tituloCaso" name="tituloCaso" required><br><br>
+
+                        <label for="categoria">Categoría de la Especie:</label><br>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="perros">Perros (Doméstico)</option>
+                            <option value="gatos">Gatos (Doméstico)</option>
+                            <option value="silvestre">Fauna Silvestre</option>
+                        </select><br><br>
+
+                        <p>Nivel de urgencia médica:</p>
+                        <input type="radio" id="urgenciaAlta" name="urgencia" value="Alta" required>
+                        <label for="urgenciaAlta">Alta (Emergencia crítica)</label><br>
+                        
+                        <input type="radio" id="urgenciaMedia" name="urgencia" value="Media">
+                        <label for="urgenciaMedia">Media (Atención pronta)</label><br>
+                        
+                        <input type="radio" id="urgenciaBaja" name="urgencia" value="Baja">
+                        <label for="urgenciaBaja">Baja (Estable)</label><br><br>
+
+                        <label for="descripcionEstado">Descripción detallada del estado en que se encontró:</label><br>
+                        <textarea id="descripcionEstado" name="descripcionEstado" rows="5" cols="50" required></textarea><br><br>
+
+                        <button type="submit">Registrar Rescate</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Rescate Animal. Desarrollado para la Universidad Técnica de Manabí.</p>
+        <p>Contacto: info@rescateanimal.edu.ec</p>
+    </footer>
+</body>
+</html>
